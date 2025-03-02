@@ -45,7 +45,7 @@ This Android project demonstrates a scalable **MVC (Model-View-Controller)** arc
     - **`controller/PostsViewModel.kt`**: Manages `PostsState` with `StateFlow`, processes `FetchPosts` intent.
     - **`controller/PostDetailViewModel.kt`**: Manages `PostDetailState`, processes `FetchPost` intent.
   - **Role**: Uses ViewModel to process intents, fetch Model data, and emit state updates to the View via `StateFlow`.
-  - **Note**: In traditional MVC, the Model updates the View directly, but here, the Controller (ViewModel) updates the View by processing Model data and emitting it through `StateFlow`, adapting to Compose’s reactive nature and ViewModel’s lifecycle awareness.
+  - **Note**: In traditional MVC, the Model and controller updates the View directly, but in modren , the Controller (ViewModel) updates the View by processing Model data and emitting it through `StateFlow`, adapting to Compose’s reactive nature and ViewModel’s lifecycle awareness.
 
 
 ## How It Works
