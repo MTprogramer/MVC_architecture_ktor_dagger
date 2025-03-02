@@ -1,7 +1,7 @@
 # MVC Architecture with Jetpack Compose, Ktor, and MVI-Inspired ViewModel
 
 
-## MVI Work Flow
+## MVC Work Flow
 ![Work flow image](images/image_1.png)
 
 This Android project demonstrates a scalable **MVC (Model-View-Controller)** architecture with an **MVI (Model-View-Intent)**-inspired approach using **ViewModel**, **Jetpack Compose**, **Ktor**, and **Kotlin Coroutines** with **StateFlow**. It fetches posts from `https://jsonplaceholder.typicode.com/posts` and navigates to a post detail view.
@@ -46,40 +46,6 @@ This Android project demonstrates a scalable **MVC (Model-View-Controller)** arc
     - **`controller/PostDetailViewModel.kt`**: Manages `PostDetailState`, processes `FetchPost` intent.
   - **Role**: Uses ViewModel to process intents, fetch Model data, and emit state updates to the View via `StateFlow`.
   - **Note**: In traditional MVC, the Model updates the View directly, but here, the Controller (ViewModel) updates the View by processing Model data and emitting it through `StateFlow`, adapting to Compose’s reactive nature and ViewModel’s lifecycle awareness.
-
-## Project Structure
-
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/mvcapp/
-│   │   │   ├── MainActivity.kt
-│   │   │   ├── data/
-│   │   │   │   ├── model/
-│   │   │   │   │   ├── Post.kt
-│   │   │   │   ├── network/
-│   │   │   │   │   ├── ApiResult.kt
-│   │   │   │   │   ├── ApiService.kt
-│   │   │   │   ├── repository/
-│   │   │   │   │   ├── PostRepository.kt
-│   │   │   │   ├── di/
-│   │   │   │   │   ├── AppModule.kt
-│   │   │   ├── ui/
-│   │   │   │   ├── screens/
-│   │   │   │   │   ├── posts/
-│   │   │   │   │   │   ├── PostsScreen.kt
-│   │   │   │   │   ├── details/
-│   │   │   │   │   │   ├── PostDetailScreen.kt
-│   │   │   │   ├── navigation/
-│   │   │   │   │   ├── AppNavigation.kt
-│   │   │   │   ├── theme/
-│   │   │   │   │   ├── Theme.kt
-│   │   │   ├── controller/
-│   │   │   │   ├── PostsViewModel.kt
-│   │   │   │   ├── PostDetailViewModel.kt
-│   │   ├── AndroidManifest.xml
-│   ├── build.gradle.kts
-├── build.gradle.kts
 
 
 ## How It Works
