@@ -2,7 +2,7 @@
 
 
 ## MVC Work Flow
-![Work flow image](images/image1.png)
+![Work flow image](images/image_1.png)
 
 This Android project demonstrates a scalable **MVC (Model-View-Controller)** architecture with an **MVI (Model-View-Intent)**-inspired approach using **ViewModel**, **Jetpack Compose**, **Ktor**, and **Kotlin Coroutines** with **StateFlow**. It fetches posts from `https://jsonplaceholder.typicode.com/posts` and navigates to a post detail view.
 
